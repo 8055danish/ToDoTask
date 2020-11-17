@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDo</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="myScript.js"></script>
+	<style>
+		ul {
+			list-style-type: none;
+			padding: 0;
+			border: 1px solid #ddd;
+		}
+
+		ul li {
+			padding: 8px 16px;
+			border-bottom: 1px solid #ddd;
+		}
+
+		ul li:last-child {
+			border-bottom: none
+		}
+	</style>
+</head>
+<body>
+	<div class="jumbotron text-center">
+		<h2 class="mb-5"> Basic Task Management Application</h2>
+		<input type="text" id="addtask">
+		<input type="submit"  class="ml-3 btn btn-primary" onclick="addTask()" value="Add Task">
+	</div>
+	<div class="container text-center">
+		<h3>Todo</h3>
+		<h6><ul id="todo"></ul></h6>
+	</div>
+	<div class="container text-center">
+		<h3>Complete Task</h3>
+		<h6><ul id="todo_c"></ul></h6>
+	</div>
+
+	
+</body>
+</html>
+
